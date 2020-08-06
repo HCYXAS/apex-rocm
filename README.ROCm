@@ -1,0 +1,13 @@
+#NOTE
+#Now the apex library support --cpp_ext --cuda_ext ,not support --bnp
+
+#requires:
+pytorch version>=1.5, ROCm version>=rocm3.3
+########install########## 
+#method 1: install with pip
+pip install dist/apex-0.1-cp36-cp36m-linux_x86_64.whl
+
+#method 1: install from src 
+CXX=hipcc CC=hipcc python3 setup.py install --cpp_ext --cuda_ext 
+
+
